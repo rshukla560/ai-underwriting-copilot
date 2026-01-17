@@ -1,0 +1,26 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment — API keys never go in image
+.env
+.env.*
+
+# ChromaDB — created fresh at runtime
+chromadb/
+
+# Git
+.git/
+.gitignore
+
+# Tests — not needed in production
+tests/
+
+# Development files
+*.ipynb
+code_practice.ipynb
+
+# OS files
+.DS_Store
