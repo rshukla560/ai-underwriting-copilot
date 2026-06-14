@@ -1,0 +1,18 @@
+# Environment — API key
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# ChromaDB — generated data
+chromadb/
+
+# OS files
+.DS_Store
+
+# Development
+*.ipynb
+.ipynb_checkpoints/
