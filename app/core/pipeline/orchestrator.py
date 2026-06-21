@@ -130,16 +130,19 @@ def run_pipeline(pdf_path: str, applicant_id: str) -> dict:
         "total_latency_ms": total_latency_ms,
         "total_cost_usd":   total_cost_usd,
         "steps": {
-            "ingestion_ms":       traces["ingestion_ms"],
-            "extraction_ms":      traces["extraction_ms"],
-            "retrieval_ms":       traces["retrieval_ms"],
-            "scoring_ms":         traces["scoring_ms"],
-            "recommendation_ms":  traces["recommendation_ms"]
-        },
+            "ingestion_ms": traces["ingestion_ms"],
+            "extraction_ms": traces["extraction_ms"],
+            "retrieval_ms":  traces["retrieval_ms"],
+            "scoring_ms": traces["scoring_ms"],
+            "recommendation_ms":  traces["recommendation_ms"]},
+        "total_cost_breakup_usd": {
+        "extraction_cost": traces.get("extraction_cost", 0),
+        "risk_scoring_cost": traces.get("scoring_cost", 0),
+        "recommendation_cost": traces.get("recommendation_cost", 0)},
         "prompt_versions": {
-            "extraction":     traces["extraction_prompt"],
-            "scoring":        traces["scoring_prompt"],
-            "recommendation": traces["recommendation_prompt"]
+            "extraction": traces["extraction_prompt"],
+            "scoring": traces["scoring_prompt"],
+            "recommendation":traces["recommendation_prompt"]
         }
     }
 
