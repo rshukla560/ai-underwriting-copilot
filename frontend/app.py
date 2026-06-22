@@ -27,11 +27,10 @@ demo = gr.Interface(
     fn=analyze,
     inputs=[
         gr.File(label="Upload Application PDF", file_types=[".pdf"]),
-        gr.Textbox(label="Applicant ID", value="DEMO_001")
-    ],
+        gr.Textbox(label="Applicant ID", value="DEMO_001"],
     outputs=gr.JSON(label="Result"),
     title="AI Underwriting Copilot",
-    description="Upload an insurance application PDF for AI- copilot underwriting."
+    description="Upload an insurance application PDF for AI-powered risk assessment. No PDF? Download sample: https://github.com/rshukla560/ai-underwriting-copilot/raw/master/tests/fixtures/sample_application.pdf"
 )
 
 if __name__ == "__main__":
