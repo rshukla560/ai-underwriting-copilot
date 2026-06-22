@@ -3,6 +3,7 @@ An agentic RAG pipeline for insurance underwriting risk assessment.
 
 ## Live Demo
 - **Visual Demo (Hugging Face Spaces):** https://huggingface.co/spaces/rshukla560/underwriting-copilot
+> Download the sample application to upload for Huggingface demo https://github.com/rshukla560/ai-underwriting-copilot/raw/master/tests/fixtures/sample_application.pdf
 
 - **API Docs (interactive):** https://ai-underwriting-copilot-production.up.railway.app/docs
 
